@@ -1,0 +1,393 @@
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(135deg, #4a90e2, #9013fe);
+    text-align: center;
+    padding: 150px 20px;
+    color: white;
+    position: relative;
+    height: 100px;
+}
+
+h1.embossed {
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+}
+
+/* CTA Button Styles */
+.cta-btn {
+    background: linear-gradient(135deg, #ff5733, #ffbd33);
+    color: #fff;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.cta-btn:hover {
+    background: linear-gradient(135deg, #ff7043, #ffdb33);
+    transform: scale(1.05);
+}
+
+/* Slider Styles */
+#slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 20px 0;
+    height: 400px;
+}
+
+.slide {
+    position: relative;
+    flex: 1;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.slide img {
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    transition: transform 0.5s ease;
+}
+
+.slide img:hover {
+    transform: scale(1.1);
+}
+
+/* Title Styling */
+#slider h2 {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(26, 236, 201);
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+}
+
+/* Features Section */
+#features {
+    text-align: center;
+    background: linear-gradient(135deg, #00bcd4, #00796b);
+    padding: 20px 0;
+}
+
+.feature-box {
+    text-align: center;
+    color: white;
+}
+
+.feature-box i {
+    font-size: 3rem;
+}
+
+/* Packages Section */
+#packages {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.package {
+    background: linear-gradient(135deg, #fff176, #fbc02d);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 15px;
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+}
+
+/* Navigation Menu Styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #c2185b, #e91e63);
+    padding: 15px 20px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffeb3b;
+}
+
+/* Checkout Styles */
+#checkout {
+    max-width: 600px;
+    margin: 20px auto;
+    background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#checkout form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, select {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Player Section Styles */
+#players {
+    padding: 50px 20px;
+    display: flex;               /* Enable Flexbox */
+    justify-content: center;     /* Center align child elements horizontally */
+    flex-wrap: wrap;            /* Allow cards to wrap to the next line if needed */
+    background: linear-gradient(135deg, #f8bbd0, #fce4ec); /* Two-tone background color */
+}
+
+.player-section {
+    margin: 20px 0;
+}
+
+.player-card {
+    background: linear-gradient(135deg, #f48fb1, #f06292);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 20px;               /* Margin between cards */
+    display: flex;              /* Enable Flexbox on the card */
+    flex-direction: column;     /* Stack child elements vertically */
+    justify-content: space-between; /* Evenly distribute space between elements */
+    width: 250px;               /* Fixed width for player cards */
+    height: 250px;              /* Fixed height for player cards */
+    text-align: center;         /* Center-align text within the card */
+}
+
+.player-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.player-card p {
+    color: #777;
+    margin-bottom: 20px;
+}
+
+/* Button Styles */
+.player-card button {
+    padding: 10px 20px;        /* Uniform padding for buttons */
+    border: none;              /* Remove default border */
+    border-radius: 5px;       /* Rounded corners */
+    background-color: #f06292; /* Button background color */
+    color: #fff;               /* Button text color */
+    font-size: 1rem;           /* Uniform font size */
+    cursor: pointer;           /* Pointer cursor on hover */
+    width: 100%;               /* Make button full width of the card */
+    text-align: center;        /* Center text within the button */
+}
+
+.player-card button:hover {
+    background-color: #d81b60; /* Change button color on hover */
+}
+
+
+
+/* Content Section Styles */
+#how-it-works {
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #d1c4e9, #b39ddb);
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.content h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+.content h3 {
+    font-size: 1.5rem;
+    margin-top: 30px;
+    color: #3f51b5;
+}
+
+.link {
+    color: #3f51b5;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+/* Contact Section */
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-container h2 {
+    color: #3f51b5;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Submit Button Styles */
+.submit-btn {
+    background: linear-gradient(135deg, #8bc34a, #cddc39);
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background: linear-gradient(135deg, #7cb342, #c0ca33);
+}
+
+/* About Section */
+#about {
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #ffe082, #ffd54f);
+}
+
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.about-container h2 {
+    color: #3f51b5;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.about-container p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Footer Styles */
+footer {
+    background: linear-gradient(135deg, #4e342e, #3e2723);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    color: #ffeb3b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Additional styling for icon */
+footer img, footer i {
+    width: 20px;                /* Set a fixed width for the icon */
+    height: 20px;               /* Set a fixed height for the icon */
+    vertical-align: middle;     /* Center the icon vertically */
+    margin-right: 5px;          /* Space between icon and text */
+}
+
+
+#video {
+    display: flex;
+    justify-content: center; /* Center align horizontally */
+    align-items: center;    /* Center align vertically (if needed) */
+    height: 100vh;          /* Full viewport height (optional) */
+    background-color: #f4f4f4; /* Optional background color */
+}
+
+.videos {
+    text-align: center; /* Center align text inside the videos div */
+}
+
+/* Video dimensions */
+video {
+    width: 700px;      /* Set the desired width */
+    height: 500px;     /* Set the desired height */
+}

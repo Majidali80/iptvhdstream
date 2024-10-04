@@ -1,0 +1,22 @@
+/* Slider Animation */
+#slider {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+    animation: fadeEffect 1s ease;
+}
+
+.slide.active {
+    display: block;
+}
+
+@keyframes fadeEffect {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - IPTV Services</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt="Logo" /></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="player.html">Player</a></li>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="packages.html">Packages</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Complete Your Purchase</h1>
+    </header>
+
+    <section id="checkout">
+        <form id="payment-form">
+            <!-- 1st Row: Package Name -->
+            <label for="package-name">Package Name:</label>
+            <input type="text" id="package-name" name="package-name" value="" readonly>
+
+            <!-- 2nd Row: Subscription -->
+            <label for="subscription">Subscription:</label>
+            <select id="subscription" name="subscription">
+                <option value="1-month">1 Month</option>
+                <option value="3-months">3 Months</option>
+                <option value="6-months">6 Months</option>
+            </select>
+
+            <!-- 3rd Row: Amount -->
+            <label for="amount">Amount (PKR):</label>
+            <input type="text" id="amount" name="amount" value="" readonly>
+
+            <!-- 4th Row: Total Amount -->
+            <label for="total">Total Amount (PKR):</label>
+            <input type="text" id="total" name="total" value="" readonly>
+
+            <!-- Payment Method -->
+            <label for="payment-method">Payment Method:</label>
+            <select id="payment-method" name="payment-method">
+                <option value="easypaisa">EasyPaisa</option>
+                <option value="jazzcash">JazzCash</option>
+                <option value="nayapay">Nayapay</option>
+            </select>
+
+            <!-- Confirm & Pay Button -->
+            <button type="button" id="confirm-payment" class="cta-btn">Confirm & Pay</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Stream Zone. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=61564422346779" target="_blank" class="social-icon">
+                    <img src="images/fb.jpeg" alt="Facebook" />
+                </a>
+                <a href="mailto:contact@streamzone.com" class="social-icon">
+                    <img src="images/ct.jpeg" alt="Contact" />
+                </a>
+            </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
